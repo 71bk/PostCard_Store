@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冬日暖陽｜手繪明信片 - 拾光手繪</title>
+
+    <!-- 和首頁一樣的字型與色票 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f9f7f2;
+            --text-color: #5a5a5a;
+            --accent-color: #b08d76;
+            --white: #ffffff;
+            --light-border: #e0e0e0;
+            --section-bg: #eae7e0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+        }
+
+        a { text-decoration: none; color: var(--text-color); transition: 0.3s; }
+        a:hover { color: var(--accent-color); }
+
+        img { max-width: 100%; display: block; }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border: 1px solid var(--accent-color);
+            background: transparent;
+            color: var(--accent-color);
+            border-radius: 50px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: 'Noto Serif TC', serif;
+        }
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: var(--white);
+        }
+
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            background: var(--bg-color);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img { height: 50px; width: auto; }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            letter-spacing: 0.1em;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem 4rem;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #999;
+        }
+
+        .breadcrumb a { color: #999; }
+        .breadcrumb a:hover { color: var(--accent-color); }
+
+        .product-detail {
+            background-color: var(--white);
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            padding: 2rem;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+        }
+
+        .product-img-wrap img {
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #f0f0f0;
+        }
+
+        .product-title {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .product-section-title {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+            color: #333;
+        }
+
+        ul { padding-left: 1.2rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.4rem; }
+
+        .highlight-box {
+            background-color: #faf3e0;
+            border-left: 3px solid var(--accent-color);
+            padding: 1rem;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+        }
+
+        .action-row {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .back-link {
+            font-size: 0.9rem;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 2rem 1rem;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 1rem; }
+            .product-detail {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="./pic/logo.png" alt="拾光手繪 PickUpLight">
+        <span class="logo-text">拾光手繪 PickUpLight</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html#shop">所有商品</a></li>
+            <li><a href="index.html#custom">客製服務</a></li>
+            <li><a href="index.html#contact">聯絡資訊</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="breadcrumb">
+        <a href="index.html">首頁</a> ＞ <a href="index.html#shop">手繪明信片</a> ＞ 冬日暖陽
+    </div>
+
+    <section class="product-detail">
+        <div class="product-img-wrap">
+            <!-- 換成你實際的商品大圖 -->
+            <img src="./pic/002.png" alt="冬日暖陽 手繪明信片 實拍">
+        </div>
+
+        <div>
+            <h1 class="product-title">冬日暖陽｜手繪明信片</h1>
+            <div class="product-price">NT$ 80</div>
+            <div class="meta">原創電腦繪圖‧印製實體明信片</div>
+
+            <h2 class="product-section-title">商品介紹</h2>
+            <p>
+                以冬日午後的陽光為主題的原創插畫明信片。搭配溫暖色調與柔和光影，希望在寒冷的日子裡，
+                也能把一點點暖意寄給遠方的重要的人。
+            </p>
+
+            <h2 class="product-section-title">規格說明</h2>
+            <ul>
+                <li>尺寸：14.8 × 10.5 cm（一般明信片大小）</li>
+                <li>材質：300g 霧面卡紙，適合鋼筆、原子筆書寫</li>
+                <li>印製方式：原創電腦繪圖輸出，高解析彩色印刷</li>
+                <li>背面：可書寫收件地址、姓名與訊息</li>
+            </ul>
+
+            <h2 class="product-section-title">客製化小調整（選填）</h2>
+            <p>
+                本款商品可提供簡單客製化服務，例如：
+            </p>
+            <ul>
+                <li>在畫面一角加上對方名字或紀念日期</li>
+                <li>在背面預先印上簡短祝福語</li>
+            </ul>
+            <p>若有客製需求，可以在結帳頁面的「客製化需求說明」欄位中填寫，我會再以 Email 與你確認細節與是否需加價。</p>
+
+            <div class="highlight-box">
+                ※ 本頁面僅示意購物流程，實際金流與訂單確認將以 Email 溝通為主。  
+                完成表單送出後，我會親自回信與你確認數量、總金額與出貨時間。
+            </div>
+
+            <div class="action-row">
+                <button class="btn" onclick="goToCart()">加入購物車</button>
+                <a href="index.html#shop" class="back-link">← 回到所有商品</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 拾光手繪 PickUpLight. All Rights Reserved.
+</footer>
+
+<script>
+    function goToCart() {
+        // 不做真的購物車，只是導向示意用購物車頁面
+        window.location.href = "cart.html?product=冬日暖陽";
+    }
+</script>
+</body>
+</html>
